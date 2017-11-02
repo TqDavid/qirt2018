@@ -1,7 +1,12 @@
 % script simple bad day
 close all
 
-I = imread('It16U.tiff');
+% I = imread('It16U.tiff');
+
+I = imread('im300_2.tiff');
+
+% see http://www.peterkovesi.com/matlabfns/
+[~,~,~, I] = phasecong3(I);
 
 I = I(54:438,105:493);
 
